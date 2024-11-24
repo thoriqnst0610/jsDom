@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Latihan 5</title>
+</head>
+<body>
+    <div id="elemen">
+        <p>Ini adalah paragraf yang bisa dihapus.</p>
+    </div>
+    <button onclick="menghapusElement()">Hapus Elemen</button>
+
+    <script>
+       
+       function menghapusElement(){
+
+        const div = document.getElementById("elemen");
+        div.remove();
+       }
+    </script>
+</body>
+</html>

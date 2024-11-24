@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Latihan 9</title>
+</head>
+<body>
+    <form id="form">
+        <label for="input1">Input 1:</label>
+        <input type="text" id="input1" name="input1">
+        <br>
+    </form>
+    <button onclick="tambahInput()">Tambah Input Baru</button>
+
+    <script>
+        function tambahInput(){
+            const form = document.getElementById('form');
+            const label = document.createElement("label");
+            const input = document.createElement("input");
+
+            label.innerText = "Input Baru: ";
+            input.type="text";
+
+            form.appendChild(label);
+            form.appendChild(input);
+            form.appendChild(document.createElement("br"));
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Latihan 3</title>
+</head>
+<body>
+    <div id="kontainer" style="width: 300px; height: 300px; background-color: lightblue; text-align: center; line-height: 300px;">
+        Konten Saya
+    </div>
+    <button onclick="ubahCss()">Ubah Gaya</button>
+
+    <script>
+        function ubahCss(){
+            const div = document.getElementById("kontainer");
+            div.style.backgroundColor = "blue";
+            div.style.width = "500px";
+        }
+    </script>
+</body>
+</html>

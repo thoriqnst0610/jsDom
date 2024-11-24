@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Latihan 2</title>
+</head>
+<body>
+    <ul id="daftar">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <button onclick="menambahElement()">Tambah Item</button>
+
+    <script>
+       function menambahElement(){
+        const induk = document.getElementById("daftar");
+        const li = document.createElement("li");
+        li.textContent = "item baru";
+        induk.appendChild(li);
+       }
+    </script>
+</body>
+</html>

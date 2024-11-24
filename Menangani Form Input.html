@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Latihan 6</title>
+</head>
+<body>
+    <form id="form">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama">
+        <button type="button" onclick="tampilkanNama()">Tampilkan Nama</button>
+    </form>
+
+    <p id="output"></p>
+
+    <script>
+        function tampilkanNama() {
+            const nama = document.getElementById('nama').value;
+            document.getElementById('output').innerText = 'Nama Anda: ' + nama;
+        }
+    </script>
+</body>
+</html>
